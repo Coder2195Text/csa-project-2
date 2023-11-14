@@ -1,0 +1,69 @@
+{
+  "mod_elements": [
+    {
+      "name": "RadioactiveEffect",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radioactive_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UraniumOre",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/not_javascript/models/block/uranium_ore.json",
+          "src/main/resources/data/not_javascript/forge/biome_modifier/uranium_ore_biome_modifier.json",
+          "src/main/java/com/coder2195/notjavascript/block/UraniumOreBlock.java",
+          "src/main/resources/assets/not_javascript/models/item/uranium_ore.json",
+          "src/main/resources/data/not_javascript/worldgen/configured_feature/uranium_ore.json",
+          "src/main/resources/assets/not_javascript/blockstates/uranium_ore.json",
+          "src/main/java/com/coder2195/notjavascript/world/features/ores/UraniumOreFeature.java",
+          "src/main/resources/data/not_javascript/worldgen/placed_feature/uranium_ore.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.not_javascript.uranium_ore": "Uranium Ore"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "not_javascript",
+    "modName": "Not Javascript",
+    "version": "1.0.0",
+    "author": "BT_1N3_02, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "com.coder2195.notjavascript",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}

@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "badlands",
+    "wooded_badlands",
+    "desert",
+    "eroded_badlands"
+  ],
+  "features": "not_javascript:uranium_ore",
+  "step": "underground_ores"
+}

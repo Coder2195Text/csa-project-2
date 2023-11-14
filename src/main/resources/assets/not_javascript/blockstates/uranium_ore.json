@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "not_javascript:block/uranium_ore"
+    }
+  }
+}

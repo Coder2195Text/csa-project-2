@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "not_javascript:block/uranium_ore",
+    "up": "not_javascript:block/uranium_ore",
+    "north": "not_javascript:block/uranium_ore",
+    "east": "not_javascript:block/uranium_ore",
+    "south": "not_javascript:block/uranium_ore",
+    "west": "not_javascript:block/uranium_ore",
+    "particle": "not_javascript:block/uranium_ore"
+  },
+  "render_type": "solid"
+}
