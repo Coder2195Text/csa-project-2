@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "not_javascript:block/enriching_table_bottom",
+    "up": "not_javascript:block/enriching_table_top",
+    "north": "not_javascript:block/enriching_table_side",
+    "east": "not_javascript:block/enriching_table_side",
+    "south": "not_javascript:block/enriching_table_side",
+    "west": "not_javascript:block/enriching_table_side",
+    "particle": "not_javascript:block/enriching_table_bottom"
+  },
+  "render_type": "solid"
+}

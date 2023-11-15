@@ -27,12 +27,129 @@
         "files": [
           "src/main/resources/assets/not_javascript/models/block/uranium_ore.json",
           "src/main/resources/data/not_javascript/forge/biome_modifier/uranium_ore_biome_modifier.json",
-          "src/main/java/com/coder2195/notjavascript/block/UraniumOreBlock.java",
           "src/main/resources/assets/not_javascript/models/item/uranium_ore.json",
           "src/main/resources/data/not_javascript/worldgen/configured_feature/uranium_ore.json",
-          "src/main/resources/assets/not_javascript/blockstates/uranium_ore.json",
+          "src/main/resources/data/not_javascript/worldgen/placed_feature/uranium_ore.json",
+          "src/main/java/com/coder2195/notjavascript/block/UraniumOreBlock.java",
           "src/main/java/com/coder2195/notjavascript/world/features/ores/UraniumOreFeature.java",
-          "src/main/resources/data/not_javascript/worldgen/placed_feature/uranium_ore.json"
+          "src/main/resources/assets/not_javascript/blockstates/uranium_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "RawUranium",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_uranium",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/item/RawUraniumItem.java",
+          "src/main/resources/assets/not_javascript/models/item/raw_uranium.json"
+        ]
+      }
+    },
+    {
+      "name": "EnrichingTable",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enriching_table",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/block/EnrichingTableBlock.java",
+          "src/main/resources/assets/not_javascript/models/block/enriching_table.json",
+          "src/main/java/com/coder2195/notjavascript/block/entity/EnrichingTableBlockEntity.java",
+          "src/main/resources/assets/not_javascript/models/item/enriching_table.json",
+          "src/main/resources/assets/not_javascript/blockstates/enriching_table.json"
+        ]
+      }
+    },
+    {
+      "name": "UraniumOreDrops",
+      "type": "loottable",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium_ore_drops",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/not_javascript/loot_tables/blocks/uranium_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "EnrichingGUI",
+      "type": "gui",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enriching_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/world/inventory/EnrichingGUIMenu.java",
+          "src/main/java/com/coder2195/notjavascript/client/gui/EnrichingGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "EnrichingTick",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enriching_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/procedures/EnrichingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnrichingTableAdded",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enriching_table_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -41,7 +158,11 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.not_javascript.uranium_ore": "Uranium Ore"
+      "block.not_javascript.uranium_ore": "Uranium Ore",
+      "gui.not_javascript.enriching_gui.label_inventory": "Inventory",
+      "item.not_javascript.raw_uranium": "Raw Uranium",
+      "block.not_javascript.enriching_table": "Enriching Table",
+      "gui.not_javascript.enriching_gui.label_enriching_table": "Enriching Table"
     }
   },
   "foldersRoot": {

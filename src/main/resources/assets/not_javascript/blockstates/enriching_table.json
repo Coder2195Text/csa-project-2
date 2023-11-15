@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "not_javascript:block/enriching_table"
+    }
+  }
+}

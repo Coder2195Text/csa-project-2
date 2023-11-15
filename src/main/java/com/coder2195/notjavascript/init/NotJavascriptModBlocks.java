@@ -11,9 +11,11 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import com.coder2195.notjavascript.block.UraniumOreBlock;
+import com.coder2195.notjavascript.block.EnrichingTableBlock;
 import com.coder2195.notjavascript.NotJavascriptMod;
 
 public class NotJavascriptModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, NotJavascriptMod.MODID);
 	public static final RegistryObject<Block> URANIUM_ORE = REGISTRY.register("uranium_ore", () -> new UraniumOreBlock());
+	public static final RegistryObject<Block> ENRICHING_TABLE = REGISTRY.register("enriching_table", () -> new EnrichingTableBlock());
 }

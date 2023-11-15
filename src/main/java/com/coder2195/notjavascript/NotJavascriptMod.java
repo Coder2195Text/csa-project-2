@@ -39,9 +39,11 @@ import java.util.ArrayList;
 import java.util.AbstractMap;
 
 import com.coder2195.notjavascript.init.NotJavascriptModTabs;
+import com.coder2195.notjavascript.init.NotJavascriptModMenus;
 import com.coder2195.notjavascript.init.NotJavascriptModItems;
 import com.coder2195.notjavascript.init.NotJavascriptModFeatures;
 import com.coder2195.notjavascript.init.NotJavascriptModBlocks;
+import com.coder2195.notjavascript.init.NotJavascriptModBlockEntities;
 
 @Mod("not_javascript")
 public class NotJavascriptMod {
@@ -53,12 +55,13 @@ public class NotJavascriptMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		NotJavascriptModBlocks.REGISTRY.register(bus);
-
+		NotJavascriptModBlockEntities.REGISTRY.register(bus);
 		NotJavascriptModItems.REGISTRY.register(bus);
 
 		NotJavascriptModTabs.REGISTRY.register(bus);
 		NotJavascriptModFeatures.REGISTRY.register(bus);
 
+		NotJavascriptModMenus.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

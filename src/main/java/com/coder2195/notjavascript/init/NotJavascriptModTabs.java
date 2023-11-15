@@ -22,6 +22,14 @@ public class NotJavascriptModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 
+		if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+			tabData.accept(NotJavascriptModBlocks.ENRICHING_TABLE.get().asItem());
+		}
+
+		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+			tabData.accept(NotJavascriptModItems.RAW_URANIUM.get());
+		}
+
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(NotJavascriptModBlocks.URANIUM_ORE.get().asItem());
 		}
