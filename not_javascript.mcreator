@@ -25,13 +25,13 @@
       "registry_name": "uranium_ore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/not_javascript/models/block/uranium_ore.json",
-          "src/main/resources/data/not_javascript/forge/biome_modifier/uranium_ore_biome_modifier.json",
-          "src/main/resources/assets/not_javascript/models/item/uranium_ore.json",
-          "src/main/resources/data/not_javascript/worldgen/configured_feature/uranium_ore.json",
-          "src/main/resources/data/not_javascript/worldgen/placed_feature/uranium_ore.json",
           "src/main/java/com/coder2195/notjavascript/block/UraniumOreBlock.java",
+          "src/main/resources/data/not_javascript/forge/biome_modifier/uranium_ore_biome_modifier.json",
           "src/main/java/com/coder2195/notjavascript/world/features/ores/UraniumOreFeature.java",
+          "src/main/resources/data/not_javascript/worldgen/configured_feature/uranium_ore.json",
+          "src/main/resources/assets/not_javascript/models/block/uranium_ore.json",
+          "src/main/resources/assets/not_javascript/models/item/uranium_ore.json",
+          "src/main/resources/data/not_javascript/worldgen/placed_feature/uranium_ore.json",
           "src/main/resources/assets/not_javascript/blockstates/uranium_ore.json"
         ]
       }
@@ -150,6 +150,19 @@
             "name": "world",
             "type": "world"
           }
+        ]
+      }
+    },
+    {
+      "name": "EnrichingTableRecipe",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enriching_table_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/not_javascript/recipes/enriching_table_recipe.json"
         ]
       }
     }
