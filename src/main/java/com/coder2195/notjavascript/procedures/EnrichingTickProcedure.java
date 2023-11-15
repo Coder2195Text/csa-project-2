@@ -20,51 +20,21 @@ public class EnrichingTickProcedure {
 		double enrichTime = 0;
 		ItemStack output = ItemStack.EMPTY;
 		boolean outputValid = false;
-		if ((new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-				return _retval.get();
-			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Items.BLAZE_ROD && (new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-				return _retval.get();
-			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == NotJavascriptModItems.RAW_URANIUM.get()) {
-			enrichTime = new Object() {
-				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "enrich_time") + 1;
-			output = (new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-					return _retval.get();
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 2));
+		BlockEntity blockEntity = world.getBlockEntity(BlockPos.containing(x, y, z));
+		if (BlockEntityMethods.getItemStack(world, blockEntity, 0).getItem() == Items.BLAZE_ROD && BlockEntityMethods.getItemStack(world, blockEntity, 1).getItem() == NotJavascriptModItems.RAW_URANIUM.get()) {
+			enrichTime = BlockEntityMethods.getDoubleTag(world, blockEntity, "enrich_time") + 1;
+			output = BlockEntityMethods.getItemStack(world, blockEntity, 2);
 			outputValid = output.getItem() == ItemStack.EMPTY.getItem() || output.getItem() == NotJavascriptModItems.RAW_URANIUM.get();
 			if (!outputValid) {
 				return;
 			}
 			if (enrichTime % 60 == 0) {
 				{
-					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-					if (_ent != null) {
+					
+					if (blockEntity != null) {
 						final int _slotid = 0;
 						final int _amount = 1;
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+						blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 							if (capability instanceof IItemHandlerModifiable) {
 								ItemStack _stk = capability.getStackInSlot(_slotid).copy();
 								_stk.shrink(_amount);
@@ -77,23 +47,21 @@ public class EnrichingTickProcedure {
 			if (enrichTime % 1200 == 0) {
 				if (outputValid) {
 					{
-						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-						if (_ent != null) {
+						if (blockEntity != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(NotJavascriptModItems.RAW_URANIUM.get());
 							_setstack.setCount((int) (output.getItem() == ItemStack.EMPTY.getItem() ? 1 : output.getCount() + 1));
-							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+							blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								if (capability instanceof IItemHandlerModifiable)
 									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
 							});
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-						if (_ent != null) {
+						if (blockEntity != null) {
 							final int _slotid = 1;
 							final int _amount = 1;
-							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+							blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								if (capability instanceof IItemHandlerModifiable) {
 									ItemStack _stk = capability.getStackInSlot(_slotid).copy();
 									_stk.shrink(_amount);
