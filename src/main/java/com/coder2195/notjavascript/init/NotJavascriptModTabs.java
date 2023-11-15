@@ -28,6 +28,7 @@ public class NotJavascriptModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(NotJavascriptModItems.RAW_URANIUM.get());
+			tabData.accept(NotJavascriptModItems.ENRICHED_URANIUM.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {

@@ -3,5 +3,6 @@
   "gui.not_javascript.enriching_gui.label_inventory": "Inventory",
   "item.not_javascript.raw_uranium": "Raw Uranium",
   "block.not_javascript.enriching_table": "Enriching Table",
-  "gui.not_javascript.enriching_gui.label_enriching_table": "Enriching Table"
+  "gui.not_javascript.enriching_gui.label_enriching_table": "Enriching Table",
+  "item.not_javascript.enriched_uranium": "Enriched Uranium"
 }

@@ -165,6 +165,20 @@
           "src/main/resources/data/not_javascript/recipes/enriching_table_recipe.json"
         ]
       }
+    },
+    {
+      "name": "EnrichedUranium",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enriched_uranium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/not_javascript/models/item/enriched_uranium.json",
+          "src/main/java/com/coder2195/notjavascript/item/EnrichedUraniumItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -175,7 +189,8 @@
       "gui.not_javascript.enriching_gui.label_inventory": "Inventory",
       "item.not_javascript.raw_uranium": "Raw Uranium",
       "block.not_javascript.enriching_table": "Enriching Table",
-      "gui.not_javascript.enriching_gui.label_enriching_table": "Enriching Table"
+      "gui.not_javascript.enriching_gui.label_enriching_table": "Enriching Table",
+      "item.not_javascript.enriched_uranium": "Enriched Uranium"
     }
   },
   "foldersRoot": {
