@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "not_javascript:uranium_ore",
-    "not_javascript:enriching_table"
+    "not_javascript:enriching_table",
+    "not_javascript:nuclear_bomb"
   ]
 }

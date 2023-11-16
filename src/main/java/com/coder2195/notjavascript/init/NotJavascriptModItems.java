@@ -22,6 +22,7 @@ public class NotJavascriptModItems {
 	public static final RegistryObject<Item> RAW_URANIUM = REGISTRY.register("raw_uranium", () -> new RawUraniumItem());
 	public static final RegistryObject<Item> ENRICHING_TABLE = block(NotJavascriptModBlocks.ENRICHING_TABLE);
 	public static final RegistryObject<Item> ENRICHED_URANIUM = REGISTRY.register("enriched_uranium", () -> new EnrichedUraniumItem());
+	public static final RegistryObject<Item> NUCLEAR_BOMB = block(NotJavascriptModBlocks.NUCLEAR_BOMB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

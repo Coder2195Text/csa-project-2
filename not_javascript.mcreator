@@ -179,18 +179,77 @@
           "src/main/java/com/coder2195/notjavascript/item/EnrichedUraniumItem.java"
         ]
       }
+    },
+    {
+      "name": "NuclearBomb",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclear_bomb",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/block/NuclearBombBlock.java",
+          "src/main/resources/assets/not_javascript/blockstates/nuclear_bomb.json",
+          "src/main/resources/assets/not_javascript/models/block/nuclear_bomb.json",
+          "src/main/resources/assets/not_javascript/models/item/nuclear_bomb.json",
+          "src/main/java/com/coder2195/notjavascript/block/entity/NuclearBombBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "NuclearBombIgnite",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclear_bomb_ignite",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/procedures/NuclearBombIgniteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "nuclear_siren",
+      "files": [
+        "nuclear_siren"
+      ],
+      "category": "weather",
+      "subtitle": "Nuclear Siren"
+    }
+  ],
   "language_map": {
     "en_us": {
       "block.not_javascript.uranium_ore": "Uranium Ore",
       "gui.not_javascript.enriching_gui.label_inventory": "Inventory",
+      "subtitles.nuclear_siren": "Nuclear Siren",
       "item.not_javascript.raw_uranium": "Raw Uranium",
       "block.not_javascript.enriching_table": "Enriching Table",
       "gui.not_javascript.enriching_gui.label_enriching_table": "Enriching Table",
-      "item.not_javascript.enriched_uranium": "Enriched Uranium"
+      "item.not_javascript.enriched_uranium": "Enriched Uranium",
+      "block.not_javascript.nuclear_bomb": "Nuclear Bomb"
     }
   },
   "foldersRoot": {

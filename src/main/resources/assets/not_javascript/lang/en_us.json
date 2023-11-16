@@ -1,8 +1,10 @@
 {
   "block.not_javascript.uranium_ore": "Uranium Ore",
   "gui.not_javascript.enriching_gui.label_inventory": "Inventory",
+  "subtitles.nuclear_siren": "Nuclear Siren",
   "item.not_javascript.raw_uranium": "Raw Uranium",
   "block.not_javascript.enriching_table": "Enriching Table",
   "gui.not_javascript.enriching_gui.label_enriching_table": "Enriching Table",
-  "item.not_javascript.enriched_uranium": "Enriched Uranium"
+  "item.not_javascript.enriched_uranium": "Enriched Uranium",
+  "block.not_javascript.nuclear_bomb": "Nuclear Bomb"
 }

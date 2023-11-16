@@ -39,6 +39,7 @@ import java.util.ArrayList;
 import java.util.AbstractMap;
 
 import com.coder2195.notjavascript.init.NotJavascriptModTabs;
+import com.coder2195.notjavascript.init.NotJavascriptModSounds;
 import com.coder2195.notjavascript.init.NotJavascriptModMenus;
 import com.coder2195.notjavascript.init.NotJavascriptModItems;
 import com.coder2195.notjavascript.init.NotJavascriptModFeatures;
@@ -53,7 +54,7 @@ public class NotJavascriptMod {
 	public NotJavascriptMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		NotJavascriptModSounds.REGISTRY.register(bus);
 		NotJavascriptModBlocks.REGISTRY.register(bus);
 		NotJavascriptModBlockEntities.REGISTRY.register(bus);
 		NotJavascriptModItems.REGISTRY.register(bus);

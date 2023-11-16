@@ -19,7 +19,6 @@ public class EnrichingTickProcedure {
 		boolean outputValid = false;
 		BlockPos blockPos = BlockPos.containing(x, y, z);
 		BlockEntity blockEntity = world.getBlockEntity(blockPos);
-		BlockState blockState = world.getBlockState(blockPos);
 
 		if (blockEntity == null)
 			return;
@@ -33,7 +32,7 @@ public class EnrichingTickProcedure {
 			if (!outputValid)
 				return;
 
-			if (enrichTime % 3 == 0) {
+			if (enrichTime % 60 == 0) {
 				blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					if (capability instanceof IItemHandlerModifiable) {
 						ItemStack stack = capability.getStackInSlot(0).copy();
@@ -42,7 +41,7 @@ public class EnrichingTickProcedure {
 					}
 				});
 			}
-			if (enrichTime % 5 == 0 && outputValid) {
+			if (enrichTime % 2400 == 0 && outputValid) {
 
 				final ItemStack outputStack = new ItemStack(NotJavascriptModItems.ENRICHED_URANIUM.get());
 				outputStack.setCount(output.getItem() == ItemStack.EMPTY.getItem() ? 1 : output.getCount() + 1);
@@ -57,23 +56,17 @@ public class EnrichingTickProcedure {
 				});
 
 				if (!world.isClientSide()) {
-					blockEntity.getPersistentData().putDouble("enrich_time", 1);
-					if (world instanceof Level level)
-						level.sendBlockUpdated(blockPos, blockState, blockState, 3);
+					BlockEntityMethods.setDoubleTag(world, blockEntity, "enrich_time", 1);
 				}
 
 				return;
 			}
 			if (!world.isClientSide()) {
-				blockEntity.getPersistentData().putDouble("enrich_time", enrichTime);
-				if (world instanceof Level level)
-					level.sendBlockUpdated(blockPos, blockState, blockState, 3);
+				BlockEntityMethods.setDoubleTag(world, blockEntity, "enrich_time", enrichTime);
 			}
 		} else {
 			if (!world.isClientSide()) {
-				blockEntity.getPersistentData().putDouble("enrich_time", 1);
-				if (world instanceof Level level)
-					level.sendBlockUpdated(blockPos, blockState, blockState, 3);
+				BlockEntityMethods.setDoubleTag(world, blockEntity, "enrich_time", 1);
 			}
 		}
 	}

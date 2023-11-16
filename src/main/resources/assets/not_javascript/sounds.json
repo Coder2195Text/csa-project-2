@@ -1,0 +1,11 @@
+{
+  "nuclear_siren": {
+    "subtitle": "subtitles.nuclear_siren",
+    "sounds": [
+      {
+        "name": "not_javascript:nuclear_siren",
+        "stream": false
+      }
+    ]
+  }
+}
