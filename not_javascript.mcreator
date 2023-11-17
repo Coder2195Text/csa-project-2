@@ -8,6 +8,9 @@
       "locked_code": false,
       "registry_name": "radioactive_effect",
       "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/procedures/RadioactiveEffectProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -25,13 +28,13 @@
       "registry_name": "uranium_ore",
       "metadata": {
         "files": [
-          "src/main/java/com/coder2195/notjavascript/block/UraniumOreBlock.java",
-          "src/main/resources/data/not_javascript/forge/biome_modifier/uranium_ore_biome_modifier.json",
-          "src/main/java/com/coder2195/notjavascript/world/features/ores/UraniumOreFeature.java",
-          "src/main/resources/data/not_javascript/worldgen/configured_feature/uranium_ore.json",
           "src/main/resources/assets/not_javascript/models/block/uranium_ore.json",
+          "src/main/resources/data/not_javascript/forge/biome_modifier/uranium_ore_biome_modifier.json",
           "src/main/resources/assets/not_javascript/models/item/uranium_ore.json",
+          "src/main/resources/data/not_javascript/worldgen/configured_feature/uranium_ore.json",
           "src/main/resources/data/not_javascript/worldgen/placed_feature/uranium_ore.json",
+          "src/main/java/com/coder2195/notjavascript/block/UraniumOreBlock.java",
+          "src/main/java/com/coder2195/notjavascript/world/features/ores/UraniumOreFeature.java",
           "src/main/resources/assets/not_javascript/blockstates/uranium_ore.json"
         ]
       }
@@ -133,6 +136,9 @@
       "locked_code": false,
       "registry_name": "enriching_table_added",
       "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/procedures/EnrichingTableAddedProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "x",
@@ -175,8 +181,8 @@
       "registry_name": "enriched_uranium",
       "metadata": {
         "files": [
-          "src/main/resources/assets/not_javascript/models/item/enriched_uranium.json",
-          "src/main/java/com/coder2195/notjavascript/item/EnrichedUraniumItem.java"
+          "src/main/java/com/coder2195/notjavascript/item/EnrichedUraniumItem.java",
+          "src/main/resources/assets/not_javascript/models/item/enriched_uranium.json"
         ]
       }
     },
@@ -192,8 +198,7 @@
           "src/main/java/com/coder2195/notjavascript/block/NuclearBombBlock.java",
           "src/main/resources/assets/not_javascript/blockstates/nuclear_bomb.json",
           "src/main/resources/assets/not_javascript/models/block/nuclear_bomb.json",
-          "src/main/resources/assets/not_javascript/models/item/nuclear_bomb.json",
-          "src/main/java/com/coder2195/notjavascript/block/entity/NuclearBombBlockEntity.java"
+          "src/main/resources/assets/not_javascript/models/item/nuclear_bomb.json"
         ]
       }
     },
@@ -207,6 +212,86 @@
       "metadata": {
         "files": [
           "src/main/java/com/coder2195/notjavascript/procedures/NuclearBombIgniteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NuclearBombEntity",
+      "type": "livingentity",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclear_bomb_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/entity/NuclearBombEntityEntity.java",
+          "src/main/java/com/coder2195/notjavascript/client/renderer/NuclearBombEntityRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "NuclearBombIgnited",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclear_bomb_ignited",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/procedures/NuclearBombIgnitedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Playground",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "playground",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/procedures/PlaygroundProcedure.java"
         ],
         "dependencies": [
           {
@@ -245,6 +330,7 @@
       "block.not_javascript.uranium_ore": "Uranium Ore",
       "gui.not_javascript.enriching_gui.label_inventory": "Inventory",
       "subtitles.nuclear_siren": "Nuclear Siren",
+      "entity.not_javascript.nuclear_bomb_entity": "Nuclear Bomb Entity",
       "item.not_javascript.raw_uranium": "Raw Uranium",
       "block.not_javascript.enriching_table": "Enriching Table",
       "gui.not_javascript.enriching_gui.label_enriching_table": "Enriching Table",
@@ -270,6 +356,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "com.coder2195.notjavascript",
     "lockBaseModFiles": false
   },

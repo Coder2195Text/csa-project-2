@@ -1,39 +1,22 @@
 package com.coder2195.notjavascript.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.Level;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
+
+import com.coder2195.notjavascript.init.NotJavascriptModEntities;
 
 public class NuclearBombIgniteProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		BlockPos blockPos = BlockPos.containing(x, y, z);
-		BlockEntity blockEntity = world.getBlockEntity(blockPos);
-		if (!world.isClientSide()) {
-			double ignitionTime = BlockEntityMethods.getDoubleTag(world, blockEntity, "ignited");
-			if (ignitionTime > 0)
-				return;
-			BlockEntityMethods.setDoubleTag(world, blockEntity, "ignited", 60);
-
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList()
-						.broadcastSystemMessage(Component.literal("NUCLEAR BOMB WILL EXPLODE IN 60 SECONDS!!!"), false);
-		}
-		if (world instanceof Level _level) {
-			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z),
-						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("not_javascript:nuclear_siren")),
-						SoundSource.WEATHER, 100, 1);
-			} else {
-				_level.playLocalSound(x, y, z,
-						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("not_javascript:nuclear_siren")),
-						SoundSource.WEATHER, 100, 1, false);
+		if (world instanceof ServerLevel _level) {
+			Entity entityToSpawn = NotJavascriptModEntities.NUCLEAR_BOMB_ENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+			if (entityToSpawn != null) {
+				entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 			}
 		}
+		world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 	}
 }

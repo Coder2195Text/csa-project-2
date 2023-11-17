@@ -8,14 +8,14 @@ import net.minecraft.core.BlockPos;
 
 public class EnrichingTableAddedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (!world.isClientSide()) {
-			BlockPos blockPos = BlockPos.containing(x, y, z);
-			BlockEntity blockEntity = world.getBlockEntity(blockPos);
-			BlockState blockState = world.getBlockState(blockPos);
-			if (blockEntity != null)
-				blockEntity.getPersistentData().putDouble("enrich_time", 1);
-			if (world instanceof Level level)
-				level.sendBlockUpdated(blockPos, blockState, blockState, 3);
-		}
+		if (world.isClientSide())
+			return;
+		BlockPos _bp = BlockPos.containing(x, y, z);
+		BlockEntity _blockEntity = world.getBlockEntity(_bp);
+		BlockState _bs = world.getBlockState(_bp);
+		if (_blockEntity != null)
+			_blockEntity.getPersistentData().putDouble("enrich_time", 1);
+		if (world instanceof Level _level)
+			_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 	}
 }
