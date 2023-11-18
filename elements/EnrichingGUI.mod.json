@@ -85,7 +85,7 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 240,
-          "y": 71
+          "y": 53
         }
       },
       {
@@ -96,6 +96,18 @@
           "x": 204,
           "y": 71
         }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 240,
+          "y": 89
+        }
       }
     ],
     "gridSettings": {
@@ -103,7 +115,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

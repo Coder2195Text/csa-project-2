@@ -312,6 +312,129 @@
           }
         ]
       }
+    },
+    {
+      "name": "NuclearBombCore",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclear_bomb_core",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/item/NuclearBombCoreItem.java",
+          "src/main/resources/assets/not_javascript/models/item/nuclear_bomb_core.json"
+        ]
+      }
+    },
+    {
+      "name": "NuclearBombCoreRecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclear_bomb_core_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/not_javascript/recipes/nuclear_bomb_core_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "NuclearBombRecipe",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclear_bomb_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/not_javascript/recipes/nuclear_bomb_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Landmine",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "landmine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/not_javascript/models/item/landmine.json",
+          "src/main/resources/assets/not_javascript/blockstates/landmine.json",
+          "src/main/resources/assets/not_javascript/models/block/landmine.json",
+          "src/main/java/com/coder2195/notjavascript/block/LandmineBlock.java",
+          "src/main/resources/assets/not_javascript/models/block/landmine_down.json"
+        ]
+      }
+    },
+    {
+      "name": "LandmineExplode",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "landmine_explode",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/procedures/LandmineExplodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DepletedUranium",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depleted_uranium",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/item/DepletedUraniumItem.java",
+          "src/main/resources/assets/not_javascript/models/item/depleted_uranium.json"
+        ]
+      }
+    },
+    {
+      "name": "DepletedUraniumArmor",
+      "type": "armor",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depleted_uranium_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/item/DepletedUraniumArmorItem.java",
+          "src/main/resources/assets/not_javascript/models/item/depleted_uranium_armor_leggings.json",
+          "src/main/resources/assets/not_javascript/models/item/depleted_uranium_armor_boots.json",
+          "src/main/resources/assets/not_javascript/models/item/depleted_uranium_armor_chestplate.json",
+          "src/main/resources/assets/not_javascript/models/item/depleted_uranium_armor_helmet.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -327,15 +450,22 @@
   ],
   "language_map": {
     "en_us": {
-      "block.not_javascript.uranium_ore": "Uranium Ore",
+      "item.not_javascript.depleted_uranium_armor_leggings": "Depleted Uranium Leggings",
       "gui.not_javascript.enriching_gui.label_inventory": "Inventory",
+      "item.not_javascript.depleted_uranium_armor_chestplate": "Depleted Uranium Chestplate",
+      "block.not_javascript.enriching_table": "Enriching Table",
+      "gui.not_javascript.enriching_gui.label_enriching_table": "Enriching Table",
+      "block.not_javascript.nuclear_bomb": "Nuclear Bomb",
+      "item.not_javascript.nuclear_bomb_core": "Nuclear Bomb Core",
+      "block.not_javascript.uranium_ore": "Uranium Ore",
+      "item.not_javascript.depleted_uranium": "Depleted Uranium",
       "subtitles.nuclear_siren": "Nuclear Siren",
       "entity.not_javascript.nuclear_bomb_entity": "Nuclear Bomb Entity",
       "item.not_javascript.raw_uranium": "Raw Uranium",
-      "block.not_javascript.enriching_table": "Enriching Table",
-      "gui.not_javascript.enriching_gui.label_enriching_table": "Enriching Table",
+      "item.not_javascript.depleted_uranium_armor_helmet": "Depleted Uranium Helmet",
       "item.not_javascript.enriched_uranium": "Enriched Uranium",
-      "block.not_javascript.nuclear_bomb": "Nuclear Bomb"
+      "item.not_javascript.depleted_uranium_armor_boots": "Depleted Uranium Boots",
+      "block.not_javascript.landmine": "Landmine"
     }
   },
   "foldersRoot": {

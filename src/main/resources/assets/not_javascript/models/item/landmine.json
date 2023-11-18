@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "not_javascript:item/landmine"
+  },
+  "render_type": "translucent"
+}

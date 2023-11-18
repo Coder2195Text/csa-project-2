@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:RawUranium"
-      },
-      {
-        "value": "Blocks.NETHERITE_BLOCK"
-      },
-      {
-        "value": "CUSTOM:RawUranium"
-      },
-      {
-        "value": "Blocks.NETHERITE_BLOCK"
+        "value": "Blocks.IRON_BLOCK"
       },
       {
         "value": "Blocks.IRON_BLOCK"
       },
       {
-        "value": "Blocks.NETHERITE_BLOCK"
+        "value": "Blocks.IRON_BLOCK"
       },
       {
-        "value": "CUSTOM:RawUranium"
+        "value": "Blocks.IRON_BLOCK"
       },
       {
-        "value": "Blocks.NETHERITE_BLOCK"
+        "value": "CUSTOM:NuclearBombCore"
       },
       {
-        "value": "CUSTOM:RawUranium"
+        "value": "Blocks.IRON_BLOCK"
+      },
+      {
+        "value": "Blocks.IRON_BLOCK"
+      },
+      {
+        "value": "Blocks.IRON_BLOCK"
+      },
+      {
+        "value": "Blocks.IRON_BLOCK"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:EnrichingTable"
+      "value": "CUSTOM:NuclearBomb"
     },
-    "name": "enriching_table_recipe",
+    "name": "nuclear_bomb_recipe",
     "namespace": "mod"
   }
 }

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "not_javascript:block/landmine"
+    },
+    "powered=true": {
+      "model": "not_javascript:block/landmine_down"
+    }
+  }
+}

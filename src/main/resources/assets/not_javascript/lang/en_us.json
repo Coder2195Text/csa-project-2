@@ -1,11 +1,18 @@
 {
-  "block.not_javascript.uranium_ore": "Uranium Ore",
+  "item.not_javascript.depleted_uranium_armor_leggings": "Depleted Uranium Leggings",
   "gui.not_javascript.enriching_gui.label_inventory": "Inventory",
+  "item.not_javascript.depleted_uranium_armor_chestplate": "Depleted Uranium Chestplate",
+  "block.not_javascript.enriching_table": "Enriching Table",
+  "gui.not_javascript.enriching_gui.label_enriching_table": "Enriching Table",
+  "block.not_javascript.nuclear_bomb": "Nuclear Bomb",
+  "item.not_javascript.nuclear_bomb_core": "Nuclear Bomb Core",
+  "block.not_javascript.uranium_ore": "Uranium Ore",
+  "item.not_javascript.depleted_uranium": "Depleted Uranium",
   "subtitles.nuclear_siren": "Nuclear Siren",
   "entity.not_javascript.nuclear_bomb_entity": "Nuclear Bomb Entity",
   "item.not_javascript.raw_uranium": "Raw Uranium",
-  "block.not_javascript.enriching_table": "Enriching Table",
-  "gui.not_javascript.enriching_gui.label_enriching_table": "Enriching Table",
+  "item.not_javascript.depleted_uranium_armor_helmet": "Depleted Uranium Helmet",
   "item.not_javascript.enriched_uranium": "Enriched Uranium",
-  "block.not_javascript.nuclear_bomb": "Nuclear Bomb"
+  "item.not_javascript.depleted_uranium_armor_boots": "Depleted Uranium Boots",
+  "block.not_javascript.landmine": "Landmine"
 }

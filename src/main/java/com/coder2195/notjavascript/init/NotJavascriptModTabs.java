@@ -27,9 +27,19 @@ public class NotJavascriptModTabs {
 			tabData.accept(NotJavascriptModBlocks.NUCLEAR_BOMB.get().asItem());
 		}
 
+		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(NotJavascriptModBlocks.LANDMINE.get().asItem());
+			tabData.accept(NotJavascriptModItems.DEPLETED_URANIUM_ARMOR_HELMET.get());
+			tabData.accept(NotJavascriptModItems.DEPLETED_URANIUM_ARMOR_CHESTPLATE.get());
+			tabData.accept(NotJavascriptModItems.DEPLETED_URANIUM_ARMOR_LEGGINGS.get());
+			tabData.accept(NotJavascriptModItems.DEPLETED_URANIUM_ARMOR_BOOTS.get());
+		}
+
 		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(NotJavascriptModItems.RAW_URANIUM.get());
 			tabData.accept(NotJavascriptModItems.ENRICHED_URANIUM.get());
+			tabData.accept(NotJavascriptModItems.NUCLEAR_BOMB_CORE.get());
+			tabData.accept(NotJavascriptModItems.DEPLETED_URANIUM.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {

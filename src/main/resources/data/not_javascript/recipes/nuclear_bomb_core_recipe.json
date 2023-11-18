@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "not_javascript:enriched_uranium"
+    },
+    {
+      "item": "not_javascript:enriched_uranium"
+    },
+    {
+      "item": "not_javascript:enriched_uranium"
+    },
+    {
+      "item": "not_javascript:enriched_uranium"
+    },
+    {
+      "item": "minecraft:redstone_block"
+    },
+    {
+      "item": "not_javascript:enriched_uranium"
+    },
+    {
+      "item": "not_javascript:enriched_uranium"
+    },
+    {
+      "item": "not_javascript:enriched_uranium"
+    },
+    {
+      "item": "not_javascript:enriched_uranium"
+    }
+  ],
+  "result": {
+    "item": "not_javascript:nuclear_bomb_core",
+    "count": 1
+  }
+}

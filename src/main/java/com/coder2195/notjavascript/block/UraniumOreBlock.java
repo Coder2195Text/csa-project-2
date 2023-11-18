@@ -17,7 +17,7 @@ import com.coder2195.notjavascript.procedures.RadioactiveEffectProcedure;
 
 public class UraniumOreBlock extends Block {
 	public UraniumOreBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GRAVEL).strength(4f, 18f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(4f, 18f).requiresCorrectToolForDrops());
 	}
 
 	@Override
