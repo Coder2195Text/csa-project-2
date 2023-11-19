@@ -8,41 +8,41 @@
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "craftingBookCategory": "BUILDING",
+    "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:RawUranium"
+        "value": "CUSTOM:DepletedUranium"
       },
       {
-        "value": "Blocks.NETHERITE_BLOCK"
+        "value": "CUSTOM:DepletedUranium"
       },
       {
-        "value": "CUSTOM:RawUranium"
+        "value": "CUSTOM:DepletedUranium"
       },
       {
-        "value": "Blocks.NETHERITE_BLOCK"
+        "value": "CUSTOM:DepletedUranium"
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": ""
       },
       {
-        "value": "Blocks.NETHERITE_BLOCK"
+        "value": "CUSTOM:DepletedUranium"
       },
       {
-        "value": "CUSTOM:RawUranium"
+        "value": ""
       },
       {
-        "value": "Blocks.NETHERITE_BLOCK"
+        "value": ""
       },
       {
-        "value": "CUSTOM:RawUranium"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:EnrichingTable"
+      "value": "CUSTOM:DepletedUraniumArmor.helmet"
     },
-    "name": "enriching_table_recipe",
+    "name": "depleted_uranium_helmet_crafting",
     "namespace": "mod"
   }
 }

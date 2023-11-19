@@ -9,40 +9,40 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": true,
+    "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Blocks.IRON_BLOCK"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Blocks.IRON_BLOCK"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Blocks.IRON_BLOCK"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Blocks.IRON_BLOCK"
       },
       {
-        "value": "Blocks.TNT"
+        "value": "CUSTOM:NuclearBombCore"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Blocks.IRON_BLOCK"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Blocks.IRON_BLOCK"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Blocks.IRON_BLOCK"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Blocks.IRON_BLOCK"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Landmine"
+      "value": "CUSTOM:NuclearBomb"
     },
-    "name": "landmine_recipe",
+    "name": "nuclear_bomb_crafting",
     "namespace": "mod"
   }
 }

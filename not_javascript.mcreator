@@ -160,19 +160,6 @@
       }
     },
     {
-      "name": "EnrichingTableRecipe",
-      "type": "recipe",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "enriching_table_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/not_javascript/recipes/enriching_table_recipe.json"
-        ]
-      }
-    },
-    {
       "name": "EnrichedUranium",
       "type": "item",
       "sortid": 10,
@@ -332,32 +319,6 @@
       }
     },
     {
-      "name": "NuclearBombCoreRecipe",
-      "type": "recipe",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuclear_bomb_core_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/not_javascript/recipes/nuclear_bomb_core_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "NuclearBombRecipe",
-      "type": "recipe",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuclear_bomb_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/not_javascript/recipes/nuclear_bomb_recipe.json"
-        ]
-      }
-    },
-    {
       "name": "Landmine",
       "type": "block",
       "sortid": 20,
@@ -441,19 +402,6 @@
       }
     },
     {
-      "name": "LandmineRecipe",
-      "type": "recipe",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "landmine_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/not_javascript/recipes/landmine_recipe.json"
-        ]
-      }
-    },
-    {
       "name": "Nautiqueen",
       "type": "livingentity",
       "sortid": 25,
@@ -468,6 +416,124 @@
           "src/main/java/com/coder2195/notjavascript/entity/NautiqueenEntity.java"
         ]
       }
+    },
+    {
+      "name": "EnrichingTableCrafting",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enriching_table_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/not_javascript/recipes/enriching_table_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "NuclearBombCoreCrafting",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclear_bomb_core_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/not_javascript/recipes/nuclear_bomb_core_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "NuclearBombCrafting",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclear_bomb_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/not_javascript/recipes/nuclear_bomb_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "LandmineCrafting",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "landmine_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/not_javascript/recipes/landmine_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "DepletedUraniumHelmetCrafting",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depleted_uranium_helmet_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/not_javascript/recipes/depleted_uranium_helmet_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "DepletedUraniumChestplateCrafting",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depleted_uranium_chestplate_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/not_javascript/recipes/depleted_uranium_chestplate_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "DepletedUraniumLeggingsCrafting",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depleted_uranium_leggings_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/not_javascript/recipes/depleted_uranium_leggings_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "DepletedUraniumBootsRecipe",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depleted_uranium_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/not_javascript/recipes/depleted_uranium_boots_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RollwaveDisc",
+      "type": "musicdisc",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rollwave_disc",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/item/RollwaveDiscItem.java",
+          "src/main/resources/assets/not_javascript/models/item/rollwave_disc.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -479,14 +545,24 @@
       ],
       "category": "weather",
       "subtitle": "Nuclear Siren"
+    },
+    {
+      "name": "rollwave",
+      "files": [
+        "rollwave"
+      ],
+      "category": "record",
+      "subtitle": "Rickroll Plays"
     }
   ],
   "language_map": {
     "en_us": {
       "item.not_javascript.depleted_uranium_armor_leggings": "Depleted Uranium Leggings",
+      "subtitles.rollwave": "Rickroll Plays",
       "gui.not_javascript.enriching_gui.label_inventory": "Inventory",
       "item.not_javascript.nautiqueen_spawn_egg": "Nautiqueen Spawn Egg",
       "item.not_javascript.depleted_uranium_armor_chestplate": "Depleted Uranium Chestplate",
+      "item.not_javascript.rollwave_disc": "Rollwave Disc",
       "block.not_javascript.enriching_table": "Enriching Table",
       "gui.not_javascript.enriching_gui.label_enriching_table": "Enriching Table",
       "block.not_javascript.nuclear_bomb": "Nuclear Bomb",
@@ -498,6 +574,7 @@
       "entity.not_javascript.nuclear_bomb_entity": "Nuclear Bomb",
       "item.not_javascript.raw_uranium": "Raw Uranium",
       "item.not_javascript.depleted_uranium_armor_helmet": "Depleted Uranium Helmet",
+      "item.not_javascript.rollwave_disc.desc": "Never gonna...",
       "item.not_javascript.enriched_uranium": "Enriched Uranium",
       "item.not_javascript.depleted_uranium_armor_boots": "Depleted Uranium Boots",
       "block.not_javascript.landmine": "Landmine"

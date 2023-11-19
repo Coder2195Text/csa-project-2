@@ -1,0 +1,19 @@
+{
+  "_fv": 47,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Rollwave Disc",
+    "texture": "rollwave_disc",
+    "description": "Never gonna...",
+    "creativeTab": {
+      "value": "TRANSPORTATION"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:rollwave"
+    },
+    "lengthInTicks": 4240,
+    "analogOutput": 15
+  }
+}

@@ -7,5 +7,14 @@
         "stream": false
       }
     ]
+  },
+  "rollwave": {
+    "subtitle": "subtitles.rollwave",
+    "sounds": [
+      {
+        "name": "not_javascript:rollwave",
+        "stream": true
+      }
+    ]
   }
 }

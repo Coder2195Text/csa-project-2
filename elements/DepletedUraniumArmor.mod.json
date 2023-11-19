@@ -3,13 +3,13 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "depleted_uranium",
+    "textureHelmet": "depleted_uranium_helmet",
     "enableBody": true,
-    "textureBody": "depleted_uranium",
+    "textureBody": "depleted_uranium_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "depleted_uranium",
+    "textureLeggings": "depleted_uranium_leggings",
     "enableBoots": true,
-    "textureBoots": "depleted_uranium",
+    "textureBoots": "depleted_uranium_boots",
     "creativeTab": {
       "value": "COMBAT"
     },

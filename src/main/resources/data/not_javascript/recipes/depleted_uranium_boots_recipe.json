@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "not_javascript:depleted_uranium"
+    },
+    "2": {
+      "item": "not_javascript:depleted_uranium"
+    },
+    "3": {
+      "item": "not_javascript:depleted_uranium"
+    },
+    "5": {
+      "item": "not_javascript:depleted_uranium"
+    }
+  },
+  "result": {
+    "item": "not_javascript:depleted_uranium_armor_boots",
+    "count": 1
+  }
+}

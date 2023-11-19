@@ -1,35 +1,40 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "ingredients": [
-    {
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
       "item": "minecraft:iron_ingot"
     },
-    {
+    "1": {
       "item": "minecraft:iron_ingot"
     },
-    {
+    "2": {
       "item": "minecraft:iron_ingot"
     },
-    {
+    "3": {
+      "item": "minecraft:gunpowder"
+    },
+    "4": {
+      "item": "minecraft:gunpowder"
+    },
+    "5": {
+      "item": "minecraft:gunpowder"
+    },
+    "6": {
       "item": "minecraft:iron_ingot"
     },
-    {
-      "item": "minecraft:tnt"
-    },
-    {
+    "7": {
       "item": "minecraft:iron_ingot"
     },
-    {
-      "item": "minecraft:iron_ingot"
-    },
-    {
-      "item": "minecraft:iron_ingot"
-    },
-    {
+    "8": {
       "item": "minecraft:iron_ingot"
     }
-  ],
+  },
   "result": {
     "item": "not_javascript:landmine",
     "count": 1

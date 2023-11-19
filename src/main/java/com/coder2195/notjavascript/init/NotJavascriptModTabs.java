@@ -25,6 +25,7 @@ public class NotJavascriptModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(NotJavascriptModBlocks.ENRICHING_TABLE.get().asItem());
 			tabData.accept(NotJavascriptModBlocks.NUCLEAR_BOMB.get().asItem());
+			tabData.accept(NotJavascriptModItems.ROLLWAVE_DISC.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
