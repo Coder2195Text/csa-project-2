@@ -9,6 +9,7 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -16,7 +17,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class NuclearBombIgnitedProcedure {
 	public static int chunkRadius = 5;
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity e) {
 		if (world instanceof Level level) {
 
 			if (level.isClientSide()) {
@@ -44,11 +45,11 @@ public class NuclearBombIgnitedProcedure {
 						// summon fireballs from y=32 to y=256
 						for (double ey = Math.max(y - Math.min(chunkRadius * 8, 100), -50); ey <= Math.min(y
 								+ Math.min(chunkRadius * 8, 100), 150); ey += 16) {
-							level.explode(entity, ex, ey, ez, 50.0F, true, Level.ExplosionInteraction.TNT);
+							level.explode(e, ex, ey, ez, 50.0F, true, Level.ExplosionInteraction.TNT);
 						}
 					}
 				}
-				entity.discard();
+				e.discard();
 			}
 		});
 	}

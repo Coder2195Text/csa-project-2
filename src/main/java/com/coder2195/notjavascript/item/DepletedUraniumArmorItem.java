@@ -5,6 +5,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
@@ -18,17 +19,17 @@ public abstract class DepletedUraniumArmorItem extends ArmorItem {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 100;
+				return new int[] { 13, 15, 16, 11 }[type.getSlot().getIndex()] * 100;
 			}
 
 			@Override
 			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{4, 7, 8, 5}[type.getSlot().getIndex()];
+				return new int[] { 4, 7, 8, 5 }[type.getSlot().getIndex()];
 			}
 
 			@Override
 			public int getEnchantmentValue() {
-				return 9;
+				return 25;
 			}
 
 			@Override
@@ -55,7 +56,7 @@ public abstract class DepletedUraniumArmorItem extends ArmorItem {
 			public float getKnockbackResistance() {
 				return 0.5f;
 			}
-		}, type, properties);
+		}, type, properties.rarity(Rarity.UNCOMMON));
 	}
 
 	public static class Helmet extends DepletedUraniumArmorItem {
@@ -65,7 +66,7 @@ public abstract class DepletedUraniumArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "not_javascript:textures/models/armor/depleted_uranium__layer_1.png";
+			return "not_javascript:textures/models/armor/depleted_uranium_layer_1.png";
 		}
 	}
 
@@ -76,7 +77,7 @@ public abstract class DepletedUraniumArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "not_javascript:textures/models/armor/depleted_uranium__layer_1.png";
+			return "not_javascript:textures/models/armor/depleted_uranium_layer_1.png";
 		}
 	}
 
@@ -87,7 +88,7 @@ public abstract class DepletedUraniumArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "not_javascript:textures/models/armor/depleted_uranium__layer_2.png";
+			return "not_javascript:textures/models/armor/depleted_uranium_layer_2.png";
 		}
 	}
 
@@ -98,7 +99,7 @@ public abstract class DepletedUraniumArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "not_javascript:textures/models/armor/depleted_uranium__layer_1.png";
+			return "not_javascript:textures/models/armor/depleted_uranium_layer_1.png";
 		}
 	}
 }

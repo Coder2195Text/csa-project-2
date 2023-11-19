@@ -7,6 +7,7 @@ package com.coder2195.notjavascript.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -33,6 +34,7 @@ public class NotJavascriptModItems {
 	public static final RegistryObject<Item> DEPLETED_URANIUM_ARMOR_CHESTPLATE = REGISTRY.register("depleted_uranium_armor_chestplate", () -> new DepletedUraniumArmorItem.Chestplate());
 	public static final RegistryObject<Item> DEPLETED_URANIUM_ARMOR_LEGGINGS = REGISTRY.register("depleted_uranium_armor_leggings", () -> new DepletedUraniumArmorItem.Leggings());
 	public static final RegistryObject<Item> DEPLETED_URANIUM_ARMOR_BOOTS = REGISTRY.register("depleted_uranium_armor_boots", () -> new DepletedUraniumArmorItem.Boots());
+	public static final RegistryObject<Item> NAUTIQUEEN_SPAWN_EGG = REGISTRY.register("nautiqueen_spawn_egg", () -> new ForgeSpawnEggItem(NotJavascriptModEntities.NAUTIQUEEN, -16724839, -13108, new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

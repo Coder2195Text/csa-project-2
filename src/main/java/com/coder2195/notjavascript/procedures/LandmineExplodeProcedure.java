@@ -12,7 +12,7 @@ public class LandmineExplodeProcedure {
 		if (world.isClientSide())
 			return;
 		if (world instanceof Level level) {
-			level.explode(null, x, y, z, 10, Level.ExplosionInteraction.MOB);
+			level.explode(null, x, y, z, 3, Level.ExplosionInteraction.MOB);
 		}
 	}
 }

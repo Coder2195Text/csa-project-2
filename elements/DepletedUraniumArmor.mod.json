@@ -13,7 +13,7 @@
     "creativeTab": {
       "value": "COMBAT"
     },
-    "armorTextureFile": "depleted_uranium_",
+    "armorTextureFile": "depleted_uranium",
     "helmetName": "Depleted Uranium Helmet",
     "bodyName": "Depleted Uranium Chestplate",
     "leggingsName": "Depleted Uranium Leggings",
@@ -55,7 +55,7 @@
     "damageValueBody": 8,
     "damageValueLeggings": 7,
     "damageValueBoots": 4,
-    "enchantability": 9,
+    "enchantability": 25,
     "toughness": 4.0,
     "knockbackResistance": 0.5,
     "equipSound": {

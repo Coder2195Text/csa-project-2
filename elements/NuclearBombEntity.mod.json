@@ -2,7 +2,7 @@
   "_fv": 47,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Nuclear Bomb Entity",
+    "mobName": "Nuclear Bomb",
     "mobLabel": "",
     "mobModelName": "ModelBlock",
     "mobModelTexture": "nuclear_bomb_entity.png",
@@ -26,7 +26,7 @@
     "creativeTab": {
       "value": "MISC"
     },
-    "isBoss": false,
+    "isBoss": true,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
@@ -57,7 +57,7 @@
     "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 16,
-    "health": 10,
+    "health": 60,
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,

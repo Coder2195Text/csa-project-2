@@ -35,6 +35,10 @@ public class NotJavascriptModTabs {
 			tabData.accept(NotJavascriptModItems.DEPLETED_URANIUM_ARMOR_BOOTS.get());
 		}
 
+		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(NotJavascriptModItems.NAUTIQUEEN_SPAWN_EGG.get());
+		}
+
 		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(NotJavascriptModItems.RAW_URANIUM.get());
 			tabData.accept(NotJavascriptModItems.ENRICHED_URANIUM.get());

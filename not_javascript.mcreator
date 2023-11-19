@@ -295,6 +295,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -424,7 +428,7 @@
       "type": "armor",
       "sortid": 23,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "depleted_uranium_armor",
       "metadata": {
         "files": [
@@ -433,6 +437,35 @@
           "src/main/resources/assets/not_javascript/models/item/depleted_uranium_armor_boots.json",
           "src/main/resources/assets/not_javascript/models/item/depleted_uranium_armor_chestplate.json",
           "src/main/resources/assets/not_javascript/models/item/depleted_uranium_armor_helmet.json"
+        ]
+      }
+    },
+    {
+      "name": "LandmineRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "landmine_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/not_javascript/recipes/landmine_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Nautiqueen",
+      "type": "livingentity",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "nautiqueen",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/client/renderer/NautiqueenRenderer.java",
+          "src/main/resources/data/not_javascript/forge/biome_modifier/nautiqueen_biome_modifier.json",
+          "src/main/resources/assets/not_javascript/models/item/nautiqueen_spawn_egg.json",
+          "src/main/java/com/coder2195/notjavascript/entity/NautiqueenEntity.java"
         ]
       }
     }
@@ -452,6 +485,7 @@
     "en_us": {
       "item.not_javascript.depleted_uranium_armor_leggings": "Depleted Uranium Leggings",
       "gui.not_javascript.enriching_gui.label_inventory": "Inventory",
+      "item.not_javascript.nautiqueen_spawn_egg": "Nautiqueen Spawn Egg",
       "item.not_javascript.depleted_uranium_armor_chestplate": "Depleted Uranium Chestplate",
       "block.not_javascript.enriching_table": "Enriching Table",
       "gui.not_javascript.enriching_gui.label_enriching_table": "Enriching Table",
@@ -460,7 +494,8 @@
       "block.not_javascript.uranium_ore": "Uranium Ore",
       "item.not_javascript.depleted_uranium": "Depleted Uranium",
       "subtitles.nuclear_siren": "Nuclear Siren",
-      "entity.not_javascript.nuclear_bomb_entity": "Nuclear Bomb Entity",
+      "entity.not_javascript.nautiqueen": "Nautiqueen",
+      "entity.not_javascript.nuclear_bomb_entity": "Nuclear Bomb",
       "item.not_javascript.raw_uranium": "Raw Uranium",
       "item.not_javascript.depleted_uranium_armor_helmet": "Depleted Uranium Helmet",
       "item.not_javascript.enriched_uranium": "Enriched Uranium",
