@@ -229,8 +229,8 @@
       "registry_name": "nuclear_bomb_entity",
       "metadata": {
         "files": [
-          "src/main/java/com/coder2195/notjavascript/entity/NuclearBombEntityEntity.java",
-          "src/main/java/com/coder2195/notjavascript/client/renderer/NuclearBombEntityRenderer.java"
+          "src/main/java/com/coder2195/notjavascript/client/renderer/NuclearBombEntityRenderer.java",
+          "src/main/java/com/coder2195/notjavascript/entity/NuclearBombEntityEntity.java"
         ]
       }
     },
@@ -327,11 +327,11 @@
       "registry_name": "landmine",
       "metadata": {
         "files": [
-          "src/main/resources/assets/not_javascript/models/item/landmine.json",
           "src/main/resources/assets/not_javascript/blockstates/landmine.json",
-          "src/main/resources/assets/not_javascript/models/block/landmine.json",
+          "src/main/resources/assets/not_javascript/models/block/landmine_down.json",
           "src/main/java/com/coder2195/notjavascript/block/LandmineBlock.java",
-          "src/main/resources/assets/not_javascript/models/block/landmine_down.json"
+          "src/main/resources/assets/not_javascript/models/block/landmine.json",
+          "src/main/resources/assets/not_javascript/models/item/landmine.json"
         ]
       }
     },
@@ -347,10 +347,6 @@
           "src/main/java/com/coder2195/notjavascript/procedures/LandmineExplodeProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -518,6 +514,56 @@
           "src/main/resources/assets/not_javascript/models/item/rollwave_disc.json"
         ]
       }
+    },
+    {
+      "name": "Warzone",
+      "type": "biome",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warzone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/not_javascript/worldgen/placed_feature/warzone_tree.json",
+          "src/main/resources/data/not_javascript/worldgen/configured_feature/warzone_tree.json",
+          "src/main/resources/data/not_javascript/worldgen/biome/warzone.json"
+        ]
+      }
+    },
+    {
+      "name": "LandmineGeneration",
+      "type": "feature",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "landmine_generation",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/not_javascript/worldgen/placed_feature/landmine_generation.json",
+          "src/main/resources/data/not_javascript/forge/biome_modifier/landmine_generation_biome_modifier.json",
+          "src/main/java/com/coder2195/notjavascript/world/features/LandmineGenerationFeature.java",
+          "src/main/resources/data/not_javascript/worldgen/configured_feature/landmine_generation.json"
+        ]
+      }
+    },
+    {
+      "name": "NuclearBombCountdown",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "nuclear_bomb_countdown",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/procedures/NuclearBombCountdownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -541,9 +587,10 @@
   ],
   "language_map": {
     "en_us": {
-      "subtitles.rollwave": "Rickroll Plays",
       "item.not_javascript.depleted_uranium_armor_leggings": "Depleted Uranium Leggings",
+      "subtitles.rollwave": "Rickroll Plays",
       "gui.not_javascript.enriching_gui.label_inventory": "Inventory",
+      "biome.not_javascript.warzone": "Warzone",
       "item.not_javascript.depleted_uranium_armor_chestplate": "Depleted Uranium Chestplate",
       "item.not_javascript.rollwave_disc": "Rollwave Disc",
       "block.not_javascript.enriching_table": "Enriching Table",

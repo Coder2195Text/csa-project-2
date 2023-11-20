@@ -96,6 +96,9 @@
     "stepSound": {
       "value": ""
     },
+    "onMobTickUpdate": {
+      "name": "NuclearBombCountdown"
+    },
     "onInitialSpawn": {
       "name": "NuclearBombIgnited"
     },

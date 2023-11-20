@@ -31,6 +31,7 @@ import net.minecraft.nbt.CompoundTag;
 import javax.annotation.Nullable;
 
 import com.coder2195.notjavascript.procedures.NuclearBombIgnitedProcedure;
+import com.coder2195.notjavascript.procedures.NuclearBombCountdownProcedure;
 import com.coder2195.notjavascript.init.NotJavascriptModEntities;
 
 public class NuclearBombEntityEntity extends Monster {
@@ -101,6 +102,12 @@ public class NuclearBombEntityEntity extends Monster {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
 		NuclearBombIgnitedProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
 		return retval;
+	}
+
+	@Override
+	public void baseTick() {
+		super.baseTick();
+		NuclearBombCountdownProcedure.execute(this);
 	}
 
 	@Override

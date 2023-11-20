@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "not_javascript:warzone",
+  "features": "not_javascript:landmine_generation",
+  "step": "vegetal_decoration"
+}
