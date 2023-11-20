@@ -402,22 +402,6 @@
       }
     },
     {
-      "name": "Nautiqueen",
-      "type": "livingentity",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "nautiqueen",
-      "metadata": {
-        "files": [
-          "src/main/java/com/coder2195/notjavascript/client/renderer/NautiqueenRenderer.java",
-          "src/main/resources/data/not_javascript/forge/biome_modifier/nautiqueen_biome_modifier.json",
-          "src/main/resources/assets/not_javascript/models/item/nautiqueen_spawn_egg.json",
-          "src/main/java/com/coder2195/notjavascript/entity/NautiqueenEntity.java"
-        ]
-      }
-    },
-    {
       "name": "EnrichingTableCrafting",
       "type": "recipe",
       "sortid": 26,
@@ -557,10 +541,9 @@
   ],
   "language_map": {
     "en_us": {
-      "item.not_javascript.depleted_uranium_armor_leggings": "Depleted Uranium Leggings",
       "subtitles.rollwave": "Rickroll Plays",
+      "item.not_javascript.depleted_uranium_armor_leggings": "Depleted Uranium Leggings",
       "gui.not_javascript.enriching_gui.label_inventory": "Inventory",
-      "item.not_javascript.nautiqueen_spawn_egg": "Nautiqueen Spawn Egg",
       "item.not_javascript.depleted_uranium_armor_chestplate": "Depleted Uranium Chestplate",
       "item.not_javascript.rollwave_disc": "Rollwave Disc",
       "block.not_javascript.enriching_table": "Enriching Table",
@@ -570,7 +553,6 @@
       "block.not_javascript.uranium_ore": "Uranium Ore",
       "item.not_javascript.depleted_uranium": "Depleted Uranium",
       "subtitles.nuclear_siren": "Nuclear Siren",
-      "entity.not_javascript.nautiqueen": "Nautiqueen",
       "entity.not_javascript.nuclear_bomb_entity": "Nuclear Bomb",
       "item.not_javascript.raw_uranium": "Raw Uranium",
       "item.not_javascript.depleted_uranium_armor_helmet": "Depleted Uranium Helmet",
