@@ -7,7 +7,10 @@ public class NuclearBombCountdownProcedure {
 	public static void execute(Entity e) {
 		if (e == null)
 			return;
-		if (e instanceof LivingEntity entity)
-			entity.setHealth((float) (entity.getHealth() - 0.05));
+		if (e instanceof LivingEntity entity) { 
+			double health = entity.getHealth();
+			if (health < .1) return;
+			entity.setHealth((float) (health - 0.05));
+		}
 	}
 }
