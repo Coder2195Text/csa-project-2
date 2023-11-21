@@ -11,6 +11,7 @@ import com.coder2195.notjavascript.init.NotJavascriptModEntities;
 
 public class NuclearBombIgniteProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
+		if (world.isClientSide()) return;
 		if (world instanceof ServerLevel level) {
 			Entity entityToSpawn = NotJavascriptModEntities.NUCLEAR_BOMB_ENTITY.get().spawn(level,
 					BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
