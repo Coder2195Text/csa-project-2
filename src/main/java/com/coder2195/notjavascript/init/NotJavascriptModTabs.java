@@ -34,6 +34,7 @@ public class NotJavascriptModTabs {
 			tabData.accept(NotJavascriptModItems.DEPLETED_URANIUM_ARMOR_CHESTPLATE.get());
 			tabData.accept(NotJavascriptModItems.DEPLETED_URANIUM_ARMOR_LEGGINGS.get());
 			tabData.accept(NotJavascriptModItems.DEPLETED_URANIUM_ARMOR_BOOTS.get());
+			tabData.accept(NotJavascriptModItems.NUCLEAR_FOOTBALL.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {

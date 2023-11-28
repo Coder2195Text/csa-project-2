@@ -564,6 +564,20 @@
           }
         ]
       }
+    },
+    {
+      "name": "NuclearFootball",
+      "type": "item",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclear_football",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/not_javascript/models/item/nuclear_football.json",
+          "src/main/java/com/coder2195/notjavascript/item/NuclearFootballItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -587,14 +601,15 @@
   ],
   "language_map": {
     "en_us": {
-      "subtitles.rollwave": "Rickroll Plays",
       "item.not_javascript.depleted_uranium_armor_leggings": "Depleted Uranium Leggings",
+      "subtitles.rollwave": "Rickroll Plays",
       "gui.not_javascript.enriching_gui.label_inventory": "Inventory",
       "biome.not_javascript.warzone": "Warzone",
       "item.not_javascript.depleted_uranium_armor_chestplate": "Depleted Uranium Chestplate",
       "item.not_javascript.rollwave_disc": "Rollwave Disc",
       "block.not_javascript.enriching_table": "Enriching Table",
       "gui.not_javascript.enriching_gui.label_enriching_table": "Enriching Table",
+      "item.not_javascript.nuclear_football": "Nuclear Football",
       "block.not_javascript.nuclear_bomb": "Nuclear Bomb",
       "item.not_javascript.nuclear_bomb_core": "Nuclear Bomb Core",
       "block.not_javascript.uranium_ore": "Uranium Ore",

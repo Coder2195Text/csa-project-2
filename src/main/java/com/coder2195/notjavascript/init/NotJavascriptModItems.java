@@ -14,6 +14,7 @@ import net.minecraft.world.item.BlockItem;
 
 import com.coder2195.notjavascript.item.RollwaveDiscItem;
 import com.coder2195.notjavascript.item.RawUraniumItem;
+import com.coder2195.notjavascript.item.NuclearFootballItem;
 import com.coder2195.notjavascript.item.NuclearBombCoreItem;
 import com.coder2195.notjavascript.item.EnrichedUraniumItem;
 import com.coder2195.notjavascript.item.DepletedUraniumItem;
@@ -35,6 +36,7 @@ public class NotJavascriptModItems {
 	public static final RegistryObject<Item> DEPLETED_URANIUM_ARMOR_LEGGINGS = REGISTRY.register("depleted_uranium_armor_leggings", () -> new DepletedUraniumArmorItem.Leggings());
 	public static final RegistryObject<Item> DEPLETED_URANIUM_ARMOR_BOOTS = REGISTRY.register("depleted_uranium_armor_boots", () -> new DepletedUraniumArmorItem.Boots());
 	public static final RegistryObject<Item> ROLLWAVE_DISC = REGISTRY.register("rollwave_disc", () -> new RollwaveDiscItem());
+	public static final RegistryObject<Item> NUCLEAR_FOOTBALL = REGISTRY.register("nuclear_football", () -> new NuclearFootballItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
