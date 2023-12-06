@@ -578,6 +578,36 @@
           "src/main/java/com/coder2195/notjavascript/item/NuclearFootballItem.java"
         ]
       }
+    },
+    {
+      "name": "Pephear",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pephear",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/item/PephearItem.java",
+          "src/main/resources/assets/not_javascript/models/item/pephear.json"
+        ]
+      }
+    },
+    {
+      "name": "UnluckyBlock",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unlucky_block",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/block/UnluckyBlockBlock.java",
+          "src/main/resources/assets/not_javascript/models/block/unlucky_block.json",
+          "src/main/resources/assets/not_javascript/models/item/unlucky_block.json",
+          "src/main/resources/assets/not_javascript/blockstates/unlucky_block.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -601,8 +631,8 @@
   ],
   "language_map": {
     "en_us": {
-      "item.not_javascript.depleted_uranium_armor_leggings": "Depleted Uranium Leggings",
       "subtitles.rollwave": "Rickroll Plays",
+      "item.not_javascript.depleted_uranium_armor_leggings": "Depleted Uranium Leggings",
       "gui.not_javascript.enriching_gui.label_inventory": "Inventory",
       "biome.not_javascript.warzone": "Warzone",
       "item.not_javascript.depleted_uranium_armor_chestplate": "Depleted Uranium Chestplate",
@@ -615,11 +645,13 @@
       "block.not_javascript.uranium_ore": "Uranium Ore",
       "item.not_javascript.depleted_uranium": "Depleted Uranium",
       "subtitles.nuclear_siren": "Nuclear Siren",
+      "block.not_javascript.unlucky_block": "Unlucky Block",
       "entity.not_javascript.nuclear_bomb_entity": "Nuclear Bomb",
       "item.not_javascript.raw_uranium": "Raw Uranium",
       "item.not_javascript.depleted_uranium_armor_helmet": "Depleted Uranium Helmet",
       "item.not_javascript.rollwave_disc.desc": "Never gonna...",
       "item.not_javascript.enriched_uranium": "Enriched Uranium",
+      "item.not_javascript.pephear": "Pephear",
       "item.not_javascript.depleted_uranium_armor_boots": "Depleted Uranium Boots",
       "block.not_javascript.landmine": "Landmine"
     }

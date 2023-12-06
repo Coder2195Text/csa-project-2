@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "not_javascript:block/unlucky_block",
+    "up": "not_javascript:block/unlucky_block",
+    "north": "not_javascript:block/unlucky_block",
+    "east": "not_javascript:block/unlucky_block",
+    "south": "not_javascript:block/unlucky_block",
+    "west": "not_javascript:block/unlucky_block",
+    "particle": "not_javascript:block/unlucky_block"
+  },
+  "render_type": "solid"
+}

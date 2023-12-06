@@ -22,6 +22,10 @@ public class NotJavascriptModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 
+		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+			tabData.accept(NotJavascriptModBlocks.UNLUCKY_BLOCK.get().asItem());
+		}
+
 		if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(NotJavascriptModBlocks.ENRICHING_TABLE.get().asItem());
 			tabData.accept(NotJavascriptModBlocks.NUCLEAR_BOMB.get().asItem());
@@ -46,6 +50,10 @@ public class NotJavascriptModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(NotJavascriptModBlocks.URANIUM_ORE.get().asItem());
+		}
+
+		if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+			tabData.accept(NotJavascriptModItems.PEPHEAR.get());
 		}
 	}
 }

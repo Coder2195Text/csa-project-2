@@ -14,6 +14,7 @@ import net.minecraft.world.item.BlockItem;
 
 import com.coder2195.notjavascript.item.RollwaveDiscItem;
 import com.coder2195.notjavascript.item.RawUraniumItem;
+import com.coder2195.notjavascript.item.PephearItem;
 import com.coder2195.notjavascript.item.NuclearFootballItem;
 import com.coder2195.notjavascript.item.NuclearBombCoreItem;
 import com.coder2195.notjavascript.item.EnrichedUraniumItem;
@@ -37,6 +38,8 @@ public class NotJavascriptModItems {
 	public static final RegistryObject<Item> DEPLETED_URANIUM_ARMOR_BOOTS = REGISTRY.register("depleted_uranium_armor_boots", () -> new DepletedUraniumArmorItem.Boots());
 	public static final RegistryObject<Item> ROLLWAVE_DISC = REGISTRY.register("rollwave_disc", () -> new RollwaveDiscItem());
 	public static final RegistryObject<Item> NUCLEAR_FOOTBALL = REGISTRY.register("nuclear_football", () -> new NuclearFootballItem());
+	public static final RegistryObject<Item> PEPHEAR = REGISTRY.register("pephear", () -> new PephearItem());
+	public static final RegistryObject<Item> UNLUCKY_BLOCK = block(NotJavascriptModBlocks.UNLUCKY_BLOCK);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
