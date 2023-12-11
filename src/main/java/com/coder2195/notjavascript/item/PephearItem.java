@@ -11,6 +11,8 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 
+import com.coder2195.notjavascript.procedures.PephearConsumeProcedure;
+
 public class PephearItem extends Item {
 	public PephearItem() {
 		super(new Item.Properties().stacksTo(16).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(0f).alwaysEat().build()));
@@ -25,6 +27,10 @@ public class PephearItem extends Item {
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
 		ItemStack retval = new ItemStack(Items.GLASS_BOTTLE);
 		super.finishUsingItem(itemstack, world, entity);
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		PephearConsumeProcedure.execute(entity);
 		if (itemstack.isEmpty()) {
 			return retval;
 		} else {

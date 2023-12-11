@@ -608,6 +608,25 @@
           "src/main/resources/assets/not_javascript/blockstates/unlucky_block.json"
         ]
       }
+    },
+    {
+      "name": "PephearConsume",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pephear_consume",
+      "metadata": {
+        "files": [
+          "src/main/java/com/coder2195/notjavascript/procedures/PephearConsumeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -631,8 +650,8 @@
   ],
   "language_map": {
     "en_us": {
-      "subtitles.rollwave": "Rickroll Plays",
       "item.not_javascript.depleted_uranium_armor_leggings": "Depleted Uranium Leggings",
+      "subtitles.rollwave": "Rickroll Plays",
       "gui.not_javascript.enriching_gui.label_inventory": "Inventory",
       "biome.not_javascript.warzone": "Warzone",
       "item.not_javascript.depleted_uranium_armor_chestplate": "Depleted Uranium Chestplate",
