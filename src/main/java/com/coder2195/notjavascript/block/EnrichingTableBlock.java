@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -45,6 +46,11 @@ import com.coder2195.notjavascript.block.entity.EnrichingTableBlockEntity;
 public class EnrichingTableBlock extends Block implements EntityBlock {
 	public EnrichingTableBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.ANVIL).strength(50f, 1200f).lightLevel(s -> 3).requiresCorrectToolForDrops());
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override

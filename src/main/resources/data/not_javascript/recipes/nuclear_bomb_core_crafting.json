@@ -2,37 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aaa",
+    "aba",
+    "aaa"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "not_javascript:enriched_uranium"
     },
-    "1": {
-      "item": "not_javascript:enriched_uranium"
-    },
-    "2": {
-      "item": "not_javascript:enriched_uranium"
-    },
-    "3": {
-      "item": "not_javascript:enriched_uranium"
-    },
-    "4": {
+    "b": {
       "item": "minecraft:redstone_block"
-    },
-    "5": {
-      "item": "not_javascript:enriched_uranium"
-    },
-    "6": {
-      "item": "not_javascript:enriched_uranium"
-    },
-    "7": {
-      "item": "not_javascript:enriched_uranium"
-    },
-    "8": {
-      "item": "not_javascript:enriched_uranium"
     }
   },
   "result": {

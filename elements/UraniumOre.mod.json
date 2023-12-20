@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "uranium_ore",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Uranium Ore",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 4.0,
     "resistance": 18.0,
     "hasGravity": false,
@@ -123,9 +125,7 @@
     "onEntityWalksOn": {
       "name": "RadioactiveEffect"
     },
-    "spawnWorldTypes": [
-      "Surface"
-    ],
+    "generateFeature": true,
     "restrictionBiomes": [
       {
         "value": "badlands"

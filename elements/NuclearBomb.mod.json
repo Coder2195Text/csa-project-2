@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "nuclear_bomb_bottom",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Nuclear Bomb",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 5.0,
     "resistance": 10.0,
     "hasGravity": false,
@@ -120,7 +122,7 @@
     "onRedstoneOn": {
       "name": "NuclearBombIgnite"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

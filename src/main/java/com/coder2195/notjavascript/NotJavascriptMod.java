@@ -42,7 +42,6 @@ import com.coder2195.notjavascript.init.NotJavascriptModTabs;
 import com.coder2195.notjavascript.init.NotJavascriptModSounds;
 import com.coder2195.notjavascript.init.NotJavascriptModMenus;
 import com.coder2195.notjavascript.init.NotJavascriptModItems;
-import com.coder2195.notjavascript.init.NotJavascriptModFeatures;
 import com.coder2195.notjavascript.init.NotJavascriptModEntities;
 import com.coder2195.notjavascript.init.NotJavascriptModBlocks;
 import com.coder2195.notjavascript.init.NotJavascriptModBlockEntities;
@@ -62,7 +61,6 @@ public class NotJavascriptMod {
 		NotJavascriptModEntities.REGISTRY.register(bus);
 
 		NotJavascriptModTabs.REGISTRY.register(bus);
-		NotJavascriptModFeatures.REGISTRY.register(bus);
 
 		NotJavascriptModMenus.REGISTRY.register(bus);
 	}

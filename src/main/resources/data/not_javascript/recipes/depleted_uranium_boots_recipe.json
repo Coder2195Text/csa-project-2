@@ -2,20 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-    "0 2",
-    "3 5"
+    "a a",
+    "a a"
   ],
   "key": {
-    "0": {
-      "item": "not_javascript:depleted_uranium"
-    },
-    "2": {
-      "item": "not_javascript:depleted_uranium"
-    },
-    "3": {
-      "item": "not_javascript:depleted_uranium"
-    },
-    "5": {
+    "a": {
       "item": "not_javascript:depleted_uranium"
     }
   },

@@ -1,15 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "musicdisc",
   "definition": {
     "name": "Rollwave Disc",
+    "rarity": "RARE",
     "texture": "rollwave_disc",
     "description": "Never gonna...",
     "creativeTab": {
       "value": "TRANSPORTATION"
     },
-    "specialInfo": [],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": []
+    },
     "music": {
       "value": "CUSTOM:rollwave"
     },

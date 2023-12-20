@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "enriching_table_bottom",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Enriching Table",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 50.0,
     "resistance": 1200.0,
     "hasGravity": false,
@@ -132,7 +134,7 @@
     "onBlockPlayedBy": {
       "name": "EnrichingTableAdded"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

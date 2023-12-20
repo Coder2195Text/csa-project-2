@@ -2,37 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aaa",
+    "aba",
+    "aaa"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:iron_block"
     },
-    "1": {
-      "item": "minecraft:iron_block"
-    },
-    "2": {
-      "item": "minecraft:iron_block"
-    },
-    "3": {
-      "item": "minecraft:iron_block"
-    },
-    "4": {
+    "b": {
       "item": "not_javascript:nuclear_bomb_core"
-    },
-    "5": {
-      "item": "minecraft:iron_block"
-    },
-    "6": {
-      "item": "minecraft:iron_block"
-    },
-    "7": {
-      "item": "minecraft:iron_block"
-    },
-    "8": {
-      "item": "minecraft:iron_block"
     }
   },
   "result": {

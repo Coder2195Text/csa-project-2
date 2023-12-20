@@ -1,25 +1,16 @@
 package com.coder2195.notjavascript.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.BlockPos;
-
-import com.coder2195.notjavascript.NotJavascriptMod;
 
 public class PlaygroundProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z) {
-		NotJavascriptMod.queueServerWork(Mth.nextInt(RandomSource.create(), 1, 10), () -> {
-			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = EntityType.LIGHTNING_BOLT.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-				if (entityToSpawn != null) {
-					entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-				}
-			}
-		});
+	public static void execute(Entity entity) {
+		if (entity == null)
+			return;
+		if (entity instanceof LivingEntity _entity)
+			_entity.setHealth(1);
+		if (entity instanceof Player _player)
+			_player.getFoodData().setFoodLevel(0);
 	}
 }
