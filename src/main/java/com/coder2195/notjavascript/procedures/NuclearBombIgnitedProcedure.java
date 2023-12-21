@@ -15,9 +15,13 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class NuclearBombIgnitedProcedure {
-	public static int chunkRadius = 5;
+	public static int chunkRadius = 8;
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity e) {
+		Requirements req = new Requirements();
+		// hate mr holmer for giving us these requirements
+		req.fulfill();
+
 		if (world instanceof Level level) {
 
 			if (level.isClientSide()) {
