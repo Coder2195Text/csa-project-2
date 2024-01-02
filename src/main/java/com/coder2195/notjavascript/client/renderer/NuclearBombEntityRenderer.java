@@ -17,4 +17,9 @@ public class NuclearBombEntityRenderer extends MobRenderer<NuclearBombEntityEnti
 	public ResourceLocation getTextureLocation(NuclearBombEntityEntity entity) {
 		return new ResourceLocation("not_javascript:textures/entities/nuclear_bomb_entity.png");
 	}
+
+	@Override
+	protected boolean isShaking(NuclearBombEntityEntity entity) {
+		return true;
+	}
 }

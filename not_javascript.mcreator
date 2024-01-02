@@ -281,8 +281,20 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -644,6 +656,19 @@
           }
         ]
       }
+    },
+    {
+      "name": "PephearCrafting",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pephear_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/not_javascript/recipes/pephear_crafting.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -667,8 +692,8 @@
   ],
   "language_map": {
     "en_us": {
-      "item.not_javascript.depleted_uranium_armor_leggings": "Depleted Uranium Leggings",
       "subtitles.rollwave": "Rickroll Plays",
+      "item.not_javascript.depleted_uranium_armor_leggings": "Depleted Uranium Leggings",
       "gui.not_javascript.enriching_gui.label_inventory": "Inventory",
       "biome.not_javascript.warzone": "Warzone",
       "item.not_javascript.depleted_uranium_armor_chestplate": "Depleted Uranium Chestplate",
@@ -714,5 +739,5 @@
     "modElementsPackage": "com.coder2195.notjavascript",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300451120
+  "mcreatorVersion": 202300452316
 }
