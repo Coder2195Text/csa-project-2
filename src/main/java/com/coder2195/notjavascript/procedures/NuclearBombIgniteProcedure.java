@@ -16,8 +16,9 @@ import com.coder2195.notjavascript.init.NotJavascriptModEntities;
 
 public class NuclearBombIgniteProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
+		world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 		if (world instanceof ServerLevel level)
-			level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, level, 4, "", Component.literal(""), level.getServer(), null).withSuppressedOutput(),
+			level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x+0.5, y, z+0.5), Vec2.ZERO, level, 4, "", Component.literal(""), level.getServer(), null).withSuppressedOutput(),
 					"summon not_javascript:nuclear_bomb_entity");
 	}
 }
