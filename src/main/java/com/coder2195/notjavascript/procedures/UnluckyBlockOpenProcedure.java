@@ -2,6 +2,8 @@ package com.coder2195.notjavascript.procedures;
 
 import com.coder2195.notjavascript.NotJavascriptMod;
 
+import net.minecraft.commands.CommandSource;
+import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.MinecraftServer;
@@ -15,6 +17,8 @@ import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.item.PrimedTnt;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.phys.Vec2;
+import net.minecraft.world.phys.Vec3;
 
 public class UnluckyBlockOpenProcedure {
 	@FunctionalInterface
@@ -52,22 +56,26 @@ public class UnluckyBlockOpenProcedure {
 
 	public static void carpetBombing(LevelAccessor world, double x, double y, double z, Entity entity) {
 		MinecraftServer server = world.getServer();
+		
 
 		if (server != null)
 			server.getPlayerList()
 					.broadcastSystemMessage(
 							Component.literal("SLEEPY JOE HAS AUTHORIZED A CARPET BOMBING OF THIS AREA!!!"), false);
 
-		for (int bx = 0; bx < x + 11; bx++) {
-			final int bxx = bx;
+		for (int bx = 0; bx < 21; bx++) {
+			final double bxx = x + bx - 9.5 ;
 			NotJavascriptMod.queueServerWork(bx * 5, () -> {
 				if (world instanceof ServerLevel level) {
-					for (double bz = z - 5; bz < z + 5; bz++) {
-						EntityType.TNT.spawn(level, BlockPos.containing(bxx - 5.0, y + 10, bz),
-								MobSpawnType.MOB_SUMMONED);
+					for (double bz = z - 9.5; bz < z + 10.5; bz++) {
+						
+			level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(bxx, y + 20, bz), Vec2.ZERO, level, 4, "", Component.literal(""), level.getServer(), null).withSuppressedOutput(),
+					"summon tnt ~ ~ ~ {Fuse:40}");
 
 					}
 				}
+
+				
 			});
 
 		}
@@ -80,7 +88,7 @@ public class UnluckyBlockOpenProcedure {
 	};
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		hi(world, x, y, z, entity);
+		carpetBombing(world, x, y, z, entity);
 		// RandomSource rand = world.getRandom();
 		// int i = Math.abs(rand.nextInt() % disasters.length);
 		// disasters[i].execute(world, x, y, z, entity);

@@ -692,8 +692,8 @@
   ],
   "language_map": {
     "en_us": {
-      "item.not_javascript.depleted_uranium_armor_leggings": "Depleted Uranium Leggings",
       "subtitles.rollwave": "Rickroll Plays",
+      "item.not_javascript.depleted_uranium_armor_leggings": "Depleted Uranium Leggings",
       "gui.not_javascript.enriching_gui.label_inventory": "Inventory",
       "biome.not_javascript.warzone": "Warzone",
       "item.not_javascript.depleted_uranium_armor_chestplate": "Depleted Uranium Chestplate",

@@ -17,7 +17,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class NuclearBombIgnitedProcedure {
 	public static int chunkRadius = 8;
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity e) {
+	public static void execute(LevelAccessor world, double ox, double oy, double oz, Entity e) {
 		Requirements req = new Requirements();
 		// hate mr holmer for giving us these requirements
 		req.fulfill();
@@ -25,13 +25,13 @@ public class NuclearBombIgnitedProcedure {
 		if (world instanceof Level level) {
 
 			if (level.isClientSide()) {
-				level.playLocalSound(x, y, z,
+				level.playLocalSound(ox, oy, oz,
 						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("not_javascript:nuclear_siren")),
 						SoundSource.WEATHER, 100, 1, false);
 				return;
 			}
 
-			level.playSound(null, BlockPos.containing(x, y, z),
+			level.playSound(null, BlockPos.containing(ox, oy, oz),
 					ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("not_javascript:nuclear_siren")),
 					SoundSource.WEATHER, 100, 1);
 
@@ -43,6 +43,9 @@ public class NuclearBombIgnitedProcedure {
 		}
 
 		NotJavascriptMod.queueServerWork(1200, () -> {
+			double x = e.getX();
+			double y = e.getY();
+			double z = e.getZ();
 			if (world instanceof ServerLevel level) {
 				for (double ex = x - chunkRadius * 16; ex <= x + chunkRadius * 16; ex += 16) {
 					for (double ez = z - chunkRadius * 16; ez <= z + chunkRadius * 16; ez += 16) {
