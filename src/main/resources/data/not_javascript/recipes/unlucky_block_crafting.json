@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "b": {
+      "item": "minecraft:chest"
+    }
+  },
+  "result": {
+    "item": "not_javascript:unlucky_block",
+    "count": 1
+  }
+}

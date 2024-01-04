@@ -97,10 +97,10 @@ public class UnluckyBlockOpenProcedure {
 	};
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		fleshy(world, x, y, z, entity);
-		// RandomSource rand = world.getRandom();
-		// int i = Math.abs(rand.nextInt() % disasters.length);
-		// disasters[i].execute(world, x, y, z, entity);
+		
+		RandomSource rand = world.getRandom();
+		int i = Math.abs(rand.nextInt() % disasters.length);
+		disasters[i].execute(world, x, y, z, entity);
 	}
 
 }
