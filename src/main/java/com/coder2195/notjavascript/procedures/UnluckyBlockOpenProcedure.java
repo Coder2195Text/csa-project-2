@@ -20,6 +20,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.Vec3;
 
@@ -72,7 +73,8 @@ public class UnluckyBlockOpenProcedure {
 					for (double bz = z - 9.5; bz < z + 10.5; bz++) {
 
 						level.getServer().getCommands().performPrefixedCommand(
-								new CommandSourceStack(CommandSource.NULL, new Vec3(bxx, y + 20, bz), Vec2.ZERO, level, 4, "",
+								new CommandSourceStack(CommandSource.NULL, new Vec3(bxx, y + 20, bz), Vec2.ZERO, level,
+										4, "",
 										Component.literal(""), level.getServer(), null).withSuppressedOutput(),
 								"summon tnt ~ ~ ~ {Fuse:40}");
 					}
@@ -89,18 +91,42 @@ public class UnluckyBlockOpenProcedure {
 		}
 	}
 
+	public static void avocados(LevelAccessor world, double x, double y, double z, Entity entity) {
+		if (world instanceof ServerLevel level) {
+			for (int bx = 0; bx < 21; bx++) {
+				double bxx = x + bx - 9.5;
+
+				for (double bz = z - 9.5; bz < z + 10.5; bz++) {
+
+					level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(bxx, y + 20, bz), Vec2.ZERO, level, 4,
+									"",
+									Component.literal(""), level.getServer(), null).withSuppressedOutput(),
+							"summon creeper");
+				}
+			}
+		}
+	}
+
+	public static void naughtyList(LevelAccessor world, double x, double y, double z, Entity entity) {
+		world.setBlock(BlockPos.containing(x, y, z), Blocks.COAL_ORE.defaultBlockState(), 0);
+	}
+
 	public static Disaster[] disasters = {
 			UnluckyBlockOpenProcedure::hi,
 			UnluckyBlockOpenProcedure::famine,
 			UnluckyBlockOpenProcedure::carpetBombing,
-			UnluckyBlockOpenProcedure::fleshy
+			UnluckyBlockOpenProcedure::fleshy,
+			UnluckyBlockOpenProcedure::avocados,
+			UnluckyBlockOpenProcedure::naughtyList,
 	};
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		
-		RandomSource rand = world.getRandom();
-		int i = Math.abs(rand.nextInt() % disasters.length);
-		disasters[i].execute(world, x, y, z, entity);
+		naughtyList(world, x, y, z, entity);
+
+		// RandomSource rand = world.getRandom();
+		// int i = Math.abs(rand.nextInt() % disasters.length);
+		// disasters[i].execute(world, x, y, z, entity);
 	}
 
 }
